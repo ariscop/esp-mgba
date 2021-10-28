@@ -1,0 +1,3 @@
+[submodule "main/libmobile"]
+	path = main/libmobile
+	url = https://github.com/REONTeam/libmobile.git

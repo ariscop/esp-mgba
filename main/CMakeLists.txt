@@ -1,0 +1,13 @@
+idf_component_register(SRCS "esp-mgba.c"
+                            "socket.c"
+                            "wifi.c"
+                            "config.c"
+                            "board.c"
+                            "libmobile/commands.c"
+                            "libmobile/debug.c"
+                            "libmobile/dns.c"
+                            "libmobile/inet_pton.c"
+                            "libmobile/mobile.c"
+                            "libmobile/serial.c"
+                            "libmobile/util.c"
+                    INCLUDE_DIRS "libmobile")
