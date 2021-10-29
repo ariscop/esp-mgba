@@ -244,7 +244,8 @@ int mobile_board_sock_recv(void *user, unsigned conn, void *data, unsigned size,
     int sock = sockets[conn];
 
     // Make sure at least one byte is in the buffer
-    if (socket_hasdata(sock, 0) <= 0) return 0;
+    // BUG - Not working on esp?
+    //if (socket_hasdata(sock, 0) <= 0) return 0;
 
     union u_sockaddr u_addr = {0};
     socklen_t sock_addrlen = sizeof(u_addr);
