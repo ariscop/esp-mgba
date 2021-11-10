@@ -10,4 +10,5 @@ idf_component_register(SRCS "esp-mgba.c"
                             "libmobile/mobile.c"
                             "libmobile/serial.c"
                             "libmobile/util.c"
-                    INCLUDE_DIRS "libmobile")
+                    INCLUDE_DIRS "libmobile"
+                    REQUIRES "esp_wifi nvs_flash spiffs")

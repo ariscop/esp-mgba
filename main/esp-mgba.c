@@ -65,9 +65,6 @@ static void init_spi()
     /* Initialize SPI slave interface */
     ret=spi_slave_initialize(SPI_PORT, &buscfg, &slvcfg, SPI_DMA_DISABLED);
     assert(ret==ESP_OK);
-
-    /* Invert MISO to drive an inverting level shifter */
-    SET_PERI_REG_MASK(GPIO_FUNC22_OUT_SEL_CFG_REG, GPIO_FUNC22_OUT_INV_SEL);
 }
 
 
