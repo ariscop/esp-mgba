@@ -1,5 +1,4 @@
 #include "esp-mgba.h"
-#include "mobile.h"
 
 #include <esp_spiffs.h>
 

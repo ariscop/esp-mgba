@@ -2,8 +2,6 @@
 
 #include <lwip/sockets.h>
 
-#include "mobile.h"
-
 /* 
  * Mostly taken from https://github.com/REONTeam/libmobile-bgb/
  */
